@@ -28,6 +28,8 @@ namespace EventEgg.Admin.Controllers
 
             // ertugrul: 16:35
 
+            // ömer :16:36
+
             return View();
         }
     }
