@@ -21,6 +21,9 @@ namespace EventEgg.Admin.Controllers
 
             // ömer : güncelleme yaptım
 
+
+            // ömr:test:test
+
             return View();
         }
     }
