@@ -1,0 +1,242 @@
+﻿@model EventEgg.Admin.Models.PersonalAddPageModel
+@{
+    ViewBag.Title = "Personel Ekle - EventEgg.com";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section styles{
+    <link rel="stylesheet" type="text/css" href="/Content/assets/plugins/select2/select2_metro.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+}
+<!-- BEGIN SIDEBAR -->
+@Html.Action("MenuLeft", "Menu")
+<!-- END SIDEBAR -->
+
+<!-- BEGIN PAGE -->
+<div class="page-content">
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+
+                <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                <h3 class="page-title">Personel Kayıt</h3>
+                <ul class="breadcrumb">
+                    <li>
+                        <i class="icon-home"></i>
+                        <a href="/Home">Anasayfa</a>
+                        <i class="icon-angle-right"></i>
+                    </li>
+                    <li><a href="#">Personel Kayıt</a></li>
+                </ul>
+                <!-- END PAGE TITLE & BREADCRUMB-->
+                <div class="portlet-body form">
+                    <!-- BEGIN FORM-->
+                    @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "horizontal-form" }))
+                    {
+                        <h3 class="form-section">Kullanıcı Bilgileri</h3>
+                        <div class="row-fluid">
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.Email, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.Email, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.Password, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.PasswordFor(m => m.PersonalDetail.Password, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.RoleId, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.DropDownListFor(m => m.PersonalDetail.RoleId, Model.RoleList, new { @class = "span12 input-large select2_category", data_placeholder = "Rol Seçiniz", tabindex = "1" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+
+                        <h3 class="form-section">Genel Bilgiler</h3>
+                        <div class="row-fluid">
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.FirstName, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.FirstName, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.LastName, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.LastName, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.Gender, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.DropDownListFor(m => m.PersonalDetail.Gender, Model.GenderList, new { @class = "span12 m-wrap" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
+                        <div class="row-fluid">
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    <label class="control-label">Doğum Tarihi</label>
+                                    <div class="controls">
+                                        <input type="text" class="m-wrap span12" placeholder="dd/mm/yyyy" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.Phone, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.Phone, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.Mobile, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.Mobile, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+                        <div class="row-fluid">
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.PersonalWebUrl, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.PersonalWebUrl, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.GooglePlus, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.GooglePlus, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.Twitter, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.Twitter, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+                        <h3 class="form-section">Adres Bilgileri</h3>
+                        <div class="row-fluid">
+                            <div class="span12 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.Address, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.TextBoxFor(m => m.PersonalDetail.Address, new { @class = "m-wrap span12" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/row-->
+                        <div class="row-fluid">
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.CountryId, new { @class = "control-label" })
+                                    <div class="controls">
+                                        @Html.DropDownListFor(m => m.PersonalDetail.CityId, Model.CountryList, new { @class = "span12 select2_category", @data_placeholder = "Ülke Seçiniz", tabindex = "1" })
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                            <div class="span4 ">
+                                <div class="control-group">
+                                    @Html.LabelFor(m => m.PersonalDetail.CityId, new { @class = "control-label" })
+                                    <div class="controls">
+                                        <select class="span12 select2_category" data-placeholder="Şehir Seçiniz" tabindex="1">
+                                            <option value=""></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+
+                        <h3 class="form-section">Biyografi</h3>
+                        <div class="row-fluid">
+                            <div class="span12 ">
+                                <div class="control-group">
+                                    <div class="controls">
+                                        @Html.TextAreaFor(m=>m.PersonalDetail.BioDescription,new{@class="span12 wysihtml5 m-wrap", rows="6"})
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+                        <div>
+                            <button type="submit" class="btn blue"><i class="icon-ok"></i>Kaydet</button>
+                            <button type="button" class="btn">Vazgeç</button>
+                        </div>
+                    }
+                    <!-- END FORM-->
+                </div>
+
+            </div>
+        </div>
+        <!-- END PAGE CONTENT-->
+    </div>
+    <!-- END PAGE CONTAINER-->
+</div>
+@section scripts{
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script type="text/javascript" src="/Content/assets/plugins/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="/Content/assets/plugins/select2/select2.min.js"></script>
+    <script type="text/javascript" src="/Content/assets/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+    <script type="text/javascript" src="/Content/assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="/Content/assets/scripts/app.js"></script>
+    <script src="/Content/assets/scripts/form-samples.js"></script>
+    <script src="/Content/assets/scripts/form-components.js"></script>
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <script>
+        jQuery(document).ready(function () {
+            // initiate layout and plugins
+            App.init();
+            FormSamples.init();
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+}

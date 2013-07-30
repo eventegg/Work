@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+	<meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+	<link href="/Content/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/Content/assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/Content/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/Content/assets/css/style-metro.css" rel="stylesheet" type="text/css"/>
+	<link href="/Content/assets/css/style.css" rel="stylesheet" type="text/css"/>
+	<link href="/Content/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+	<link href="/Content/assets/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+	<link href="/Content/assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL STYLES --> 
+    @RenderSection("styles", required: false)
+	<!-- END PAGE LEVEL STYLES -->
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed">
+    <!-- BEGIN HEADER -->
+    @Html.Action("MenuHeader","Menu")
+	<!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        @RenderBody()
+    </div>
+    <!-- END CONTAINER -->
+    @Html.Action("MenuFooter","Menu")
+    
+    <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+	<!-- BEGIN CORE PLUGINS -->
+	<script src="/Content/assets/plugins/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<script src="/Content/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+	<script src="/Content/assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>      
+	<script src="/Content/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<!--[if lt IE 9]>
+	<script src="/Content/assets/plugins/excanvas.min.js"></script>
+	<script src="/Content/assets/plugins/respond.min.js"></script>  
+	<![endif]-->   
+	<script src="/Content/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="/Content/assets/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
+	<script src="/Content/assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+	<script src="/Content/assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+	<!-- END CORE PLUGINS -->
+	<!-- END JAVASCRIPTS -->
+
+    @RenderSection("scripts", required: false)
+</body>
+<!-- END BODY -->
+</html>

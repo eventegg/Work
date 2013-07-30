@@ -1,0 +1,59 @@
+﻿@model EventEgg.Admin.Models.PersonalLoginPageModel
+@{
+    ViewBag.Title = "Kullanıcı Giriş - Eventegg.com";
+    Layout = "~/Views/Shared/_LayoutPersonal.cshtml";
+}
+<!-- BEGIN LOGO -->
+<div class="logo">
+    <img src="/Content/assets/img/logo-big.png" alt="" />
+</div>
+<!-- END LOGO -->
+<!-- BEGIN LOGIN -->
+<div class="content">
+    <!-- BEGIN LOGIN FORM -->
+    @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form-vertical login-form" }))
+    {
+        <h3 class="form-title">Kullanıcı Giriş</h3>
+        
+        if (TempData["Error"] != null)
+        {
+            
+        <div class="alert alert-error">
+            <button class="close" data-dismiss="alert"></button>
+            <span>@Html.ValidationSummary()</span>
+        </div>
+        }
+        
+        <div class="alert alert-error hide">
+            <button class="close" data-dismiss="alert"></button>
+            <span>Eposta adresinizi ve şifrenizi giriniz.</span>
+        </div>
+        
+        <div class="control-group">
+            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+            <label class="control-label visible-ie8 visible-ie9">Username</label>
+            <div class="controls">
+                <div class="input-icon left">
+                    <i class="icon-user"></i>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "m-wrap placeholder-no-fix", placeholder = "Eposta adresiniz" })
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label visible-ie8 visible-ie9">Password</label>
+            <div class="controls">
+                <div class="input-icon left">
+                    <i class="icon-lock"></i>
+                    @Html.PasswordFor(m => m.Password, new { @class = "m-wrap placeholder-no-fix", placeholder = "Şifreniz" })
+                </div>
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn green pull-right">
+                Giriş <i class="m-icon-swapright m-icon-white"></i>
+            </button>
+        </div>
+    }
+    <!-- END LOGIN FORM -->
+</div>
+<!-- END LOGIN -->

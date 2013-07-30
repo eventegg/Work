@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EventEgg.Domain.Asset.Article" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAEAEAAAEAACAAAAAAAAAAAAAAAAgBAAgBAAAA=</HashCode>
+      <FileName>Asset\Article.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.ArticleMap" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\Article.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.ArticleContent" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACQAAEAAAAAgAAAAAAAAAAEAAAAAAAggAAAAAAAAA=</HashCode>
+      <FileName>Asset\ArticleContent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.ArticleContentMap" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\ArticleContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.AssetType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Asset\AssetType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.AssetTypeMap" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\AssetType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.Gallery" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAACAAAAAQAAAAAAAAAAgBAAAAAAAA=</HashCode>
+      <FileName>Asset\Gallery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.GalleryMap" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\Gallery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.Image" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAEAAAEAAIACAAAAAQAAAAAAAAAAgBAAAAAAAA=</HashCode>
+      <FileName>Asset\Image.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.ImageMap" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.ImageGallery" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACQAAAAAAAAAAAAAAAAAAAAIAAAAEAAgAAAAAAAAA=</HashCode>
+      <FileName>Asset\ImageGallery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.ImageGalleryMap" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\ImageGallery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.TableName" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Asset\TableName.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.TableNameMap" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\TableName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.Template" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAEAAAEAgIAAAAAAAQAAAAAAAAAAgAAAAAAIAA=</HashCode>
+      <FileName>Asset\Template.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.TemplateMap" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\Template.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.Video" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAEAAAEAAIACAAAAAQAAAAAAAAAAgBAAAAAAAA=</HashCode>
+      <FileName>Asset\Video.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Asset.VideoMap" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Asset\Video.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Event.City" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAEAAAAAAAAAAAAAAQAIAIQAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Event\City.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Event.CityMap" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Event.Country" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAACAAAEAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Event\Country.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventEgg.Domain.Event.CountryMap" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Event\Country.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Personal.PersonalDetail" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAEIFAiAAAECJEAAAAAAAAAIQACCCAwAAMAAAAAg=</HashCode>
+      <FileName>Personal\PersonDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Personal.PersonDetailMap" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Personal\PersonDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Personal.Role" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Personal\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EventEgg.Domain.Personal.RolesMap" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Personal\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
