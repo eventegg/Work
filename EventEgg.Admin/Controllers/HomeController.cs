@@ -23,6 +23,8 @@ namespace EventEgg.Admin.Controllers
 
 
             // ömr:test:test
+            
+            // ömer : alll
 
             return View();
         }
