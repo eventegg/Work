@@ -30,8 +30,6 @@ namespace EventEgg.Admin.Controllers
 
             // ömer :16:36 (ertugrul ekledi)
 
-
-
             return View();
         }
     }
